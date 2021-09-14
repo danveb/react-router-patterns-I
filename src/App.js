@@ -5,13 +5,13 @@ import Routes from './components/Routes'
 
 import './static/styles/App.css'
 
-const App = () => {
+const App = ({ dogs }) => {
   return (
     <div className="App">
       
       <BrowserRouter>
-        <Navbar /> 
-        <Routes /> 
+        <Navbar dogs={dogs} /> 
+        <Routes dogs={dogs} /> 
       </BrowserRouter>
 
     </div>
