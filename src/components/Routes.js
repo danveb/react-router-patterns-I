@@ -10,7 +10,7 @@ const Routes = ({ dogs }) => {
             <Route exact path="/dogs">
                 <DogList dogs={dogs} /> 
             </Route>
-            <Route exact path="dogs/:name">
+            <Route path="/dogs/:name">
                 <DogDetails dogs={dogs} /> 
             </Route>
             <Redirect to="/dogs"/>
