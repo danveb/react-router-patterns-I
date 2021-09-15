@@ -3,6 +3,11 @@ import { BrowserRouter } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Routes from './components/Routes'
 
+import whiskey from "./static/img/whiskey.jpg";
+import tubby from "./static/img/tubby.jpg";
+import duke from "./static/img/duke.jpg";
+import perry from "./static/img/perry.jpg";
+
 import './static/styles/App.css'
 
 const App = ({ dogs }) => {
@@ -11,7 +16,7 @@ const App = ({ dogs }) => {
       
       <BrowserRouter>
         <Navbar dogs={dogs} /> 
-        <Routes dogs={dogs} /> 
+          <Routes dogs={dogs} /> 
       </BrowserRouter>
 
     </div>
@@ -23,7 +28,7 @@ App.defaultProps = {
     {
       name: "Whiskey",
       age: 5,
-      src: "./static/img/whiskey.jpg",
+      src: whiskey,
       facts: [
         "Whiskey loves eating popcorn.",
         "Whiskey is a terrible guard dog.",
@@ -33,7 +38,7 @@ App.defaultProps = {
     {
       name: "Duke",
       age: 3,
-      src: "./static/img/duke.jpg",
+      src: duke,
       facts: [
         "Duke believes that ball is life.",
         "Duke likes snow.",
@@ -43,7 +48,7 @@ App.defaultProps = {
     {
       name: "Perry",
       age: 4,
-      src: "./static/img/perry.jpg",
+      src: perry,
       facts: [
         "Perry loves all humans.",
         "Perry demolishes all snacks.",
@@ -53,7 +58,7 @@ App.defaultProps = {
     {
       name: "Tubby",
       age: 4,
-      src: "./static/img/tubby.jpg",
+      src: tubby,
       facts: [
         "Tubby is really stupid.",
         "Tubby does not like walks.",
